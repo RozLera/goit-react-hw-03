@@ -1,14 +1,16 @@
-const ContactList = () => {
+import Contact from "../Contact/Contact";
+
+const ContactList = ({ contacts, deleteContact }) => {
   return (
-    <div>
-      <ul>
-        <li>
-          <p>Name</p>
-          <p>Phone</p>
-          <button>Delete</button>
-        </li>
-      </ul>
-    </div>
+    <ul>
+      {contacts.map((contact) => (
+        <Contact
+          key={contact.id}
+          contact={contact}
+          deleteContact={deleteContact}
+        />
+      ))}
+    </ul>
   );
 };
 
