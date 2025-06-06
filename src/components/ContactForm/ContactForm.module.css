@@ -1,0 +1,17 @@
+.text {
+  text-align: start;
+}
+
+.form {
+  width: 360px;
+  border: 1px solid lightskyblue;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 0 auto 28px;
+  font-size: 18px;
+}
+
+.field {
+  margin-bottom: 24px;
+  position: relative;
+}

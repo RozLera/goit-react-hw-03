@@ -1,0 +1,12 @@
+.box {
+  width: 40%;
+  margin: 0 auto;
+  margin-bottom: 28px;
+  font-size: 18px;
+}
+
+.input {
+  font-size: 20px;
+  width: 100%;
+  padding: 6px 10px;
+}

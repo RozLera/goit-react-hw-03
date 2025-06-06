@@ -1,0 +1,17 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  width: calc((100% - 32px) / 3);
+  border: 1px solid lightskyblue;
+  border-radius: 8px;
+  padding: 16px 16px;
+}
+
+.text {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
