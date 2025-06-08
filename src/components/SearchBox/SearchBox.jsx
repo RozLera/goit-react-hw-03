@@ -13,7 +13,6 @@ function SearchBox({ value, onSearch }) {
         onChange={handleSearchBox}
         placeholder="Please enter text"
       />
-      <p>{value}</p>
     </div>
   );
 }

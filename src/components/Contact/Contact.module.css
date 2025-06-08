@@ -8,10 +8,11 @@
 }
 
 .text {
+  margin-bottom: 8px;
+}
+
+.icons {
   display: flex;
   gap: 8px;
-  margin-bottom: 8px;
-  &:last-child {
-    margin-bottom: 0;
-  }
+  padding: 0 auto;
 }

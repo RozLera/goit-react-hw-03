@@ -1,4 +1,6 @@
 import css from "./Contact.module.css";
+import { VscAccount } from "react-icons/vsc";
+import { FaPhoneAlt } from "react-icons/fa";
 
 const Contact = ({ contact, deleteContact }) => {
   function handleClick(id) {
@@ -6,8 +8,17 @@ const Contact = ({ contact, deleteContact }) => {
   }
   return (
     <li className={css.item}>
-      <p className={css.text}>{contact.name}</p>
-      <p className={css.text}>{contact.number}</p>
+      <div>
+        <div className={css.icons}>
+          <VscAccount />
+          <p className={css.text}>{contact.name}</p>
+        </div>
+
+        <div className={css.icons}>
+          <FaPhoneAlt />
+          <p className={css.text}>{contact.number}</p>
+        </div>
+      </div>
       <button onClick={() => handleClick(contact.id)}>Delete</button>
     </li>
   );
